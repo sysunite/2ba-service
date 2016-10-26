@@ -1,0 +1,14 @@
+version: '2'
+  services:
+    2ba-service:
+      image: sysunite/2ba-service:0.0.3
+      expose: 
+       - "9349"
+      ports:
+       - "9349:9349"
+      environment:
+        - CLIENT_ID=SYSUNITE_UOB
+        - CLIENT_SECRET=Fi39cWhOVDGS0Ne5NRMf
+        - USERNAME=development@sysunite.com
+        - PASSWORD=development
+        - API_KEY=MQztDGVh4FhwTXM_5
